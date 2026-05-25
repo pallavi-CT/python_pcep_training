@@ -1,0 +1,3 @@
+1. Write scripts that prompt users for structured input (e.g., temperature, distance, currency).
+2. Format output using print() with sep= and end= to simulate clean data logging.
+3. Read string input and cast to numeric types (int, float) for calculations.
