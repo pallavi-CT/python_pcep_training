@@ -1,0 +1,14 @@
+1. Accept name, age, duration, insurance amount from the user. Based on age and duration, calculate the number of premiums and the premium amount. Age below 18 and above 60 are invalid.
+
+2. A store has around 500 items. Every 7th item should have a quality check. Print the item which has been checked.
+
+3. Write a while loop to find the first number in 1 to 100 that is a perfect square and divisible by 3.
+import math
+
+4. Create a sales summary report using string functions. 
+Data: [("Alice", 85000, 0.12), ("Bob", 12200, 0.28), ("Charles", 67500, 0.05)]
+Fields to be shown: Name, Sales, Growth(%)
+
+
+5. Given a list of employees: [("Alice", "HR", 56000), ("Bob", "IT", 65000), ("Charles", "It",67500), ("Dan", "Development", 78000)]
+Extract all the IT employees. Sort this list in descending order
