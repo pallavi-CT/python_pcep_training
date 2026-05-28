@@ -22,7 +22,7 @@ from collections import namedtuple, defaultdict, Counter
 # print(fruits[-2:])
 
 
-# raw_data = [("Alice", "HR", 56000), ("Bob", "IT", 65000), ("Charles", "IT",67500), ("Dan", "Development", 78000), ("Ethan", "IT", 55000), ("Greg", "IT", 65700)]
+raw_data = [("Alice", "HR", 56000), ("Bob", "IT", 65000), ("Charles", "IT",67500), ("Dan", "Development", 78000), ("Ethan", "IT", 55000), ("Greg", "IT", 65700)]
 
 # it_team = []
 
@@ -37,9 +37,9 @@ from collections import namedtuple, defaultdict, Counter
 
 # print(it_team)
 
-# for ind, emp in enumerate(raw_data):
-#     for i, e in enumerate(emp[0]):
-#         print(i, e)
+for ind, emp in enumerate(raw_data, 1):
+    # for i, e in enumerate(emp):
+    print(ind, emp)
 
 #tuples - immutable
 
@@ -145,35 +145,35 @@ from collections import namedtuple, defaultdict, Counter
 #     print(f"IP: {ip:18} | Max: {data['max_sev']:8} | Events: {dict(freq)}")
 
 
-# Sets - only unique values
-skills_a = {'Python', 'C', 'Java'}
-skills_b = {'Java', 'C#', 'Python', 'R'}
+# # Sets - only unique values
+# skills_a = {'Python', 'C', 'Java'}
+# skills_b = {'Java', 'C#', 'Python', 'R'}
 
-common_skills = skills_a & skills_b   # intersection
-either_skills = skills_a | skills_b   # union
-only_in_a = skills_a - skills_b  # difference
-unique_skills = skills_a ^ skills_b  # symmetric diff
+# common_skills = skills_a & skills_b   # intersection
+# either_skills = skills_a | skills_b   # union
+# only_in_a = skills_a - skills_b  # difference
+# unique_skills = skills_a ^ skills_b  # symmetric diff
 
-print(f"Common Skills: {common_skills}")
-print(f"Either Skills: {either_skills}")
-print(f"Unique Skills: {unique_skills}")
+# print(f"Common Skills: {common_skills}")
+# print(f"Either Skills: {either_skills}")
+# print(f"Unique Skills: {unique_skills}")
 
-emp_ids = [101, 102, 102, 104, 109, 101, 301]
-unique_ids = list(set(emp_ids))
+# emp_ids = [101, 102, 102, 104, 109, 101, 301]
+# unique_ids = list(set(emp_ids))
 
-duplicate_ids = [x for x in emp_ids if emp_ids.count(x) > 1]
+# duplicate_ids = [x for x in emp_ids if emp_ids.count(x) > 1]
 
-print(f"Unique Ids: {unique_ids}, Duplicates: {duplicate_ids}")
+# print(f"Unique Ids: {unique_ids}, Duplicates: {duplicate_ids}")
 
-# duplicate_ids = []
-# for x in emp_ids:
-#     if emp_ids.count(x) > 1:
-#         duplicate_ids.append(x)
+# # duplicate_ids = []
+# # for x in emp_ids:
+# #     if emp_ids.count(x) > 1:
+# #         duplicate_ids.append(x)
 
-fruits = ["apple", "banana", "grapes", 'apple', 'orange', 'CHERRY', 'banana']
+# fruits = ["apple", "banana", "grapes", 'apple', 'orange', 'CHERRY', 'banana']
 
-unique_fruits = {fruit.title() for fruit in fruits} # set comprehension
-print(f"Unique Fruits in Title case: {unique_fruits}")
+# unique_fruits = {fruit.title() for fruit in fruits} # set comprehension
+# print(f"Unique Fruits in Title case: {unique_fruits}")
 
 
 # set, functions, modules, classes => tomorrow

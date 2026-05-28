@@ -1,0 +1,17 @@
+End-to-End Mini Data Pipeline: You're given a raw dataset of sales transactions. Clean it, analyse it, and report on it.
+
+raw_transactions = [
+    {"date": "2024-01-15", "agent": "  ALICE  ",  "region": "north", "amount": "₹12500"},
+    {"date": "2024-01-16", "agent": "BOB",       "region": "SOUTH", "amount": "₹8900"},
+    {"date": "2024-01-16", "agent": "alice",     "region": "North", "amount": "N/A"},
+    {"date": "2024-01-17", "agent": "  charlie", "region": "east",  "amount": "₹21000"},
+    {"date": "2024-01-17", "agent": "BOB",       "region": "south", "amount": "₹15500"},
+    {"date": "2024-01-18", "agent": "CHARLIE",   "region": "East",  "amount": "₹9800"},
+]
+
+Tasks:
+
+Clean the data: normalize agent names (Title Case, strip spaces), normalize region (Title Case), skip rows where amount is "N/A", extract numeric amount from "₹XXXXX".
+Calculate total sales per agent (use a dict with defaultdict or .get()).
+Find which regions are represented (use a set).
+Print a formatted leaderboard showing agents ranked by total sales.

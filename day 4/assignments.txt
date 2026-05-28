@@ -1,0 +1,24 @@
+Build a temperature conversion module:
+1 Write celsius_to_fahrenheit(c) and fahrenheit_to_celsius(f)
+2 Write celsius_to_kelvin(c) and kelvin_to_celsius(k)
+3 Write convert(value, from_unit, to_unit) that handles all 6 conversions using the above
+4 Test: convert 100°C → F, 212°F → C, 0K → C, 373.15K → C
+5 Add input validation — raise ValueError for impossible temps (below absolute 0)
+[Include dictionary for the conversion stats and lambda functions]
+
+
+
+Build a flexible report-generation system:
+
+Write format_row(*values, sep=" | ", padding=10) that formats values into a table row
+Write print_table(headers, *rows, title=None, **style) — where style can contain: border_char, header_sep
+Write generate_report(data: list[dict], *fields, title="Report", **options) that:
+- Extracts the specified fields from each dict
+- Calls print_table to render
+- Optionally sorts by a field if sort_by kwarg is provided
+Test with the sales data below
+sales = [
+    {"rep": "Alice", "region": "North", "q1": 120000, "q2": 145000},
+    {"rep": "Bob",   "region": "South", "q1": 98000,  "q2": 110000},
+    {"rep": "Carol", "region": "East",  "q1": 175000, "q2": 162000},
+]
