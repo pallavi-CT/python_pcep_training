@@ -1,0 +1,17 @@
+Build a configurable risk scoring system for loan applications:
+
+Write individual scorer functions: score_credit(credit_score), score_income(monthly_income, loan_amount), score_employment(years_employed), score_debt_ratio(total_debt, income)
+Each scorer returns a value 0–100 (higher = lower risk)
+Write calculate_risk(*scorer_fns, weights=None, **applicant_data) that:
+- Calls each scorer with the applicant data
+- Applies weights (default: equal weight)
+- Returns composite score and per-component breakdown
+Write make_decision(composite_score) → "Approve" / "Review" / "Decline"
+Test with 3 different applicant profiles
+
+Test Data:
+applicants = [
+    {"name": "Ana",   "credit_score": 780, "monthly_income": 8000,  "loan_amount": 50000, "years_employed": 8,  "total_debt": 5000},
+    {"name": "Ben",   "credit_score": 620, "monthly_income": 4000,  "loan_amount": 30000, "years_employed": 2,  "total_debt": 12000},
+    {"name": "Cara",  "credit_score": 550, "monthly_income": 2500,  "loan_amount": 20000, "years_employed": 1,  "total_debt": 18000},
+]

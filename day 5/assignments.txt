@@ -1,0 +1,9 @@
+Create a simple utility module. The functions should be for
+1. check if a number is even or odd
+2. arithemitic operations
+3. check if a number is a palindrome
+Import this into a menu based main.py with user input
+
+
+create a Student class with Name, Science, Maths, English, Social marks. Write 2 functions
+calculate_total_marks(), calculate_grade(). Print the student name with the total and the grade.
