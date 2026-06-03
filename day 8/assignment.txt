@@ -5,3 +5,9 @@ Create a dataframe with 6 students: name, subject (Maths, Science, Social, Engli
 4. Sort the dataframe in descending order
 5. Set the student name as the index for the df
 
+Write a function clean_dataframe(df, config) that accepts:
+config['fill']: dict of column → fill strategy ('mean', 'median', 'mode', or a literal value)
+config['drop_if_null']: list of columns where NaN means drop the row
+config['str_cols']: list of string columns to strip + title-case
+config['date_cols']: list of columns to parse as datetime
+Apply it to a test DataFrame with 10 rows containing intentional nulls, mixed case strings, and date strings.
